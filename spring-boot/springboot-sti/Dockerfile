@@ -1,13 +1,14 @@
 # springboot-sti
-FROM openshift/base-centos7
-MAINTAINER Jorge Morales <jmorales@redhat.com>
+FROM rhel7:latest
+#Forked form Jorge Morales Examples
+MAINTAINER Greg Hoelzer <ghoelzer@redhat.com>
 
 # Install build tools on top of base image
 # Java jdk 8, Maven 3.3, Gradle 2.6
 ENV GRADLE_VERSION 2.6
 ENV MAVEN_VERSION 3.3.3
 
-RUN yum install -y --enablerepo=centosplus \
+RUN yum install -y --enablerepo=epel \
     tar unzip bc which lsof java-1.8.0-openjdk java-1.8.0-openjdk-devel && \
     yum clean all -y && \
     (curl -0 http://www.eu.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz | \

@@ -33,7 +33,7 @@
             "source": {
                "type": "Git",
                "git": {
-                  "uri": "https://github.com/jorgemoralespou/osev3-examples.git",
+                  "uri": "https://github.com/ghoelzer-rht/osev3-springboot-examples.git",
                   "ref": "master"
                },
                "contextDir": "spring-boot/springboot-sti"
@@ -43,7 +43,7 @@
                "dockerStrategy": {
                   "from": {
                      "kind": "ImageStreamTag",
-                     "name": "centos:centos7"
+                     "name": "rhel7:latest"
                   }
                }
             },
@@ -60,10 +60,10 @@
          "kind": "ImageStream",
          "apiVersion": "v1",
          "metadata": {
-            "name": "centos"
+            "name": "rhel7"
          },
          "spec": {
-            "dockerImageRepository": "library/centos:centos7"
+            "dockerImageRepository": "library/rhel7:latest"
          }
       },
       {
@@ -120,7 +120,7 @@
             {
                "description": "Git source URI for application",
                "name": "GIT_URI",
-               "value": "https://github.com/jorgemoralespou/osev3-examples.git"
+               "value": "https://github.com/ghoelzer-rht/osev3-springboot-examples.git"
             },
             {
                "description": "Git branch/tag reference",
@@ -362,7 +362,7 @@
             {
                "description": "Git source URI for application",
                "name": "GIT_URI",
-               "value": "https://github.com/jorgemoralespou/osev3-examples.git"
+               "value": "https://github.com/ghoelzer-rht/osev3-springboot-examples.git"
             },
             {
                "description": "Git branch/tag reference",
