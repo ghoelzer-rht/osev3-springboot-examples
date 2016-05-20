@@ -31,7 +31,7 @@ BUILDER_ARGS="build -x test"
 * First load all the needed resources in a project.
 
 ----
-oc create -f https://raw.githubusercontent.com/jorgemoralespou/osev3-examples/master/spring-boot/springboot-sti/springboot-sti-all.json
+oc create -f https://raw.githubusercontent.com/ghoelzer-rht/osev3-springboot-examples/master/spring-boot/springboot-sti/springboot-sti-all.json
 ----
 
 * Once the builder springboot-sti has finished building, you can create an app with:
