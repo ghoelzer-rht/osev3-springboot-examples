@@ -10,5 +10,5 @@ You can clone or fork the repository, or just use the instructions provided in t
 You can create everything as cluster-admin with:
 
 ----
-oc create -f https://raw.githubusercontent.com/jorgemoralespou/osev3-examples/master/all-in-v3.json
+oc create -f https://raw.githubusercontent.com/ghoelzer-rht/osev3-springboot-examples/master/all-in-v3.json
 ----
