@@ -20,7 +20,7 @@ public class Application {
 		InetAddress ip = InetAddress.getLocalHost();
         	String hostname = ip.getHostName();
 
-		helloWorldMsg = helloWorldMsg + hostname + "IP Address: " + ip;
+		helloWorldMsg = helloWorldMsg + " Pod/IP: " + ip;
 		
 	   } catch (UnknownHostException ex) {
             ex.printStackTrace();
