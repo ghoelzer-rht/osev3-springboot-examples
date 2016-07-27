@@ -15,14 +15,9 @@ public class Application {
 
 	@RequestMapping("/")
 	public String home() {
-	InetAddress ip = "127.0.0.1";
-        String hostname = "localhost";
-        try {
-            ip = InetAddress.getLocalHost();
-            hostname = ip.getHostName();
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
+		InetAddress ip = InetAddress.getLocalHost();
+        	String hostname = ip.getHostName();
+
 		return "Hello Docker World from " + hostname + "IP Address: " + ip;
 	}
 
