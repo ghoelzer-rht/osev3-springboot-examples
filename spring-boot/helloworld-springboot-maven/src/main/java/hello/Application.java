@@ -15,8 +15,8 @@ public class Application {
 
 	@RequestMapping("/")
 	public String home() {
-	InetAddress ip;
-        String hostname;
+	InetAddress ip="127.0.0.1";
+        String hostname="localhost";
         try {
             ip = InetAddress.getLocalHost();
             hostname = ip.getHostName();
