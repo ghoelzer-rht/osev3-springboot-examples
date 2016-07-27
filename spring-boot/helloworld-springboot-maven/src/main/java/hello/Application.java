@@ -15,10 +15,15 @@ public class Application {
 
 	@RequestMapping("/")
 	public String home() {
+	   try {
 		InetAddress ip = InetAddress.getLocalHost();
         	String hostname = ip.getHostName();
 
 		return "Hello Docker World from " + hostname + "IP Address: " + ip;
+		
+	   } catch (UnknownHostException ex) {
+            ex.printStackTrace();
+           }
 	}
 
 
